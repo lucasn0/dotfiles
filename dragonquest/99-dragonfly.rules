@@ -1,0 +1,4 @@
+# This file should be in /etc/udev/rules.d/@here
+# Then, run "sudo udevadm control --reload-rules && sudo udevadm trigger"
+
+SUBSYSTEM=="sound", ACTION=="add", ATTRS{idVendor}=="21b4", ATTRS{idProduct}=="0082", RUN+="/usr/bin/amixer -c v10 sset Master 25%"
