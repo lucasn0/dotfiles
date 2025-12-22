@@ -1,34 +1,20 @@
 Vanilla Tweaks Resource Pack
 Version: 1.21
 Packs:
-	DarkUI
-	HangingSignLogs
+	InvisibleTotem
+	HungerBarsGoldCarrot
+	BlueWidgetsHighlight
 	GreenAxolotl
 	SpinningBurningSkullPainting
-	BlueWidgetsHighlight
-	HungerBarsGoldCarrot
-	InvisibleTotem
-	ClassicPanorama
-	ColoredHeartsYellow
-	Age25Kelp
-	DirectionalHoppers
-	StickyPistonSides
-	DirectionalDispensersDroppers
-	GroovyLevers
-	CompassLodestone
-	BrewingGuide
-	QuieterEndermen
-	QuieterGhasts
-	QuieterDispensersDroppers
-	QuieterNetherPortals
-	QuieterMinecarts
-	QuieterExplosions
-	QuieterChests
-	QuieterPistons
-	StemToLog
-	2DSpyglass
-	GoldenCrown
-	EnderDragonElytra
+	HangingSignLogs
+	DarkUI
+	TwinklingStars
+	GoldenSavanna
+	BrighterNether
+	HDEndFlash
+	ClearerWater
+	FancySunflowers
+	SmootherFont
 	3DStonecutters
 	3DVines
 	3DGlowLichen
@@ -38,27 +24,39 @@ Packs:
 	3DIronBars
 	3DPointedDripstone
 	3DDoors
-	SmootherFont
-	TwinklingStars
-	GoldenSavanna
-	BrighterNether
-	HDEndFlash
-	ClearerWater
-	FancySunflowers
-	WitherHearts
-	ItemStitchingFix
-	DripleafFixBig
-	PixelConsistentGhast
-	ConsistentDecorPot
-	SusSandGravel
-	SoyjakVault
-	TechnobladePigs
-	ClassicMinecraftLogo
-	OldXpSounds
+	StemToLog
+	2DSpyglass
+	GoldenCrown
+	EnderDragonElytra
+	QuieterDispensersDroppers
+	QuieterNetherPortals
+	QuieterMinecarts
+	QuieterPistons
+	QuieterEndermen
+	QuieterGhasts
+	Age25Kelp
+	DirectionalHoppers
+	StickyPistonSides
+	DirectionalDispensersDroppers
+	GroovyLevers
+	CompassLodestone
+	BrewingGuide
+	ColoredHeartsYellow
+	ClassicPanorama
 	LowerFire
 	LowerShield
 	NoPumpkinOverlay
 	UnobtrusiveScaffolding
+	ClassicMinecraftLogo
+	OldXpSounds
+	SusSandGravel
+	SoyjakVault
+	TechnobladePigs
+	ItemStitchingFix
+	DripleafFixBig
+	PixelConsistentGhast
+	ConsistentDecorPot
+	WitherHearts
 	VariatedBookshelves
 	ConnectedBookshelves
 	JappaObserver
