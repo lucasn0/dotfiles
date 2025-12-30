@@ -12,7 +12,7 @@ style = { blinking = "Always" }
 size = 11.0 # Juega con esto: a veces 11.5 o 12.0 arregla el icono solo
 
 [font.normal]
-family = "JetBrainsMono Nerd Font" # IMPORTANTE: Pon aquí TU fuente instalada (ej: Hack Nerd Font, FiraCode, etc)
+family = "JetBrainsMono Nerd Font Mono" # IMPORTANTE: Pon aquí TU fuente instalada (ej: Hack Nerd Font, FiraCode, etc)
 style = "Regular"
 
 # --- AQUI ESTA LA MAGIA PARA TU PROBLEMA ---
