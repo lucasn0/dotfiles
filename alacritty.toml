@@ -1,0 +1,29 @@
+# ~/.config/alacritty/alacritty.toml
+
+[window]
+padding = { x = 10, y = 10 } # Un poco de aire en los bordes queda mejor
+opacity = 0.95               # Un poco de transparencia (opcional)
+title = "Alacritty"
+
+[cursor]
+style = { blinking = "Always" }
+
+[font]
+size = 11.0 # Juega con esto: a veces 11.5 o 12.0 arregla el icono solo
+
+[font.normal]
+family = "JetBrainsMono Nerd Font" # IMPORTANTE: Pon aquí TU fuente instalada (ej: Hack Nerd Font, FiraCode, etc)
+style = "Regular"
+
+# --- AQUI ESTA LA MAGIA PARA TU PROBLEMA ---
+# Esto empuja los caracteres hacia arriba o abajo dentro de su celda.
+# Si el icono se ve "corrido", modifica 'y'.
+[font.offset]
+x = 0
+y = 0  # Prueba con 1, -1, o incluso valores decimales si usaras la version vieja (pero en toml suelen ser enteros)
+
+# Esto ajusta cuánto espacio vertical extra hay entre líneas.
+# A veces los iconos de Powerline necesitan menos espacio para tocarse.
+[font.glyph_offset]
+x = 0
+y = 0
