@@ -110,6 +110,8 @@ setopt hist_ignore_dups
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(starship init zsh)"
 
-alias ls='eza'
+alias ls='eza --icons --group-directories-first'
 alias cat='bat'
 alias df='duf'
+alias grep='rg'
+alias ping='gping'
