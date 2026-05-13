@@ -109,4 +109,7 @@ setopt hist_ignore_dups
 
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(starship init zsh)"
-eval "$(starship init zsh)"
+
+alias ls='eza'
+alias cat='bat'
+alias df='duf'
