@@ -67,7 +67,7 @@
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git)
 
 # User configuration
 
@@ -106,12 +106,18 @@ setopt append_history
 setopt share_history
 setopt hist_ignore_dups
 
-
 export PATH="$HOME/.local/bin:$PATH"
-eval "$(starship init zsh)"
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="bira"
+source $ZSH/oh-my-zsh.sh
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls='eza --icons --group-directories-first'
-alias cat='bat'
 alias df='duf'
+alias cat='bat'
 alias grep='rg'
 alias ping='gping'
+
+zstyle ':completion:*' rehash true
