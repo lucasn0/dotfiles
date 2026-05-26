@@ -121,3 +121,7 @@ alias grep='rg'
 alias ping='gping'
 
 zstyle ':completion:*' rehash true
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/luk/.local/bin:$PATH"
