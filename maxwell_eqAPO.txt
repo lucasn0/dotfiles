@@ -1,0 +1,5 @@
+Device:   Speakers Game-Audeze Maxwell {c10088f5-d3e3-4c30-a803-d4641b03d683}
+Include: C:\Program Files\EqualizerAPO\config\Audeze Maxwell (Audeze preset) GraphicEq.txt
+Device: Microphone Chat-Audeze Maxwell {f4114823-f128-40f5-8f06-0a58c1ac0f8a}
+Preamp: -6 dB
+GraphicEQ: 25 -12; 40 -8; 63 -3; 100 1.5; 160 0; 250 -2; 400 0; 630 0; 1000 0; 1600 1; 2500 2.5; 4000 1.5; 6300 0; 10000 1; 16000 0
