@@ -119,6 +119,7 @@ alias df='duf'
 alias cat='bat'
 alias grep='rg'
 alias ping='gping'
+alias spt='spotify_player'
 
 zstyle ':completion:*' rehash true
 
