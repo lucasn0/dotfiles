@@ -1,0 +1,15 @@
+font-family = JetBrainsMono Nerd Font
+font-style = Regular
+font-thicken = true
+
+background-opacity = 0.9
+background-blur = true
+
+cursor-style = block
+cursor-style-blink = true
+shell-integration-features = no-cursor
+
+window-save-state = always
+window-width = 160
+window-height = 40
+confirm-close-surface = false
