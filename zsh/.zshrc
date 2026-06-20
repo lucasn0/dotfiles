@@ -120,6 +120,7 @@ alias cat='bat'
 alias grep='rg'
 alias ping='gping'
 alias spt='spotify_player'
+alias vencord='/home/luk/dotfiles/scripts/vencord.sh'
 
 zstyle ':completion:*' rehash true
 
