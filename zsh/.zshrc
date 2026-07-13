@@ -121,6 +121,7 @@ alias grep='rg'
 alias ping='gping'
 alias spt='spotify_player'
 alias vencord='/home/luk/dotfiles/scripts/vencord.sh'
+alias maxwell='/home/luk/dotfiles/scripts/maxwell.py'
 
 zstyle ':completion:*' rehash true
 
