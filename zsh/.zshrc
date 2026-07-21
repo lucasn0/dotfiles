@@ -5,7 +5,6 @@
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -71,32 +70,18 @@ plugins=(git)
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
+update_all() {
+	echo "-> 1. Updating DNF packages... <-"
+	sudo dnf update -y
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+	echo -e "\n-> 2. Updating Flatpaks... <-"
+	flatpak update -y
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+	echo -3 "\n-> 3. Updating Homebrew casks and formulae... <-"
+	brew update && brew upgrade
 
-# Compilation flags
-# export ARCHFLAGS="-arch $(uname -m)"
-
-# Set personal aliases, overriding those provided by Oh My Zsh libs,
-# plugins, and themes. Aliases can be placed here, though Oh My Zsh
-# users are encouraged to define aliases within a top-level file in
-# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
-# - $ZSH_CUSTOM/aliases.zsh
-# - $ZSH_CUSTOM/macos.zsh
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+	echo -e "\n -> Everything has been updated succesfully. <-"
+	}
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -122,9 +107,12 @@ alias ping='gping'
 alias spt='spotify_player'
 alias vencord='/home/luk/dotfiles/scripts/vencord.sh'
 alias maxwell='/home/luk/dotfiles/scripts/maxwell.py'
+alias update=update_all
 
 zstyle ':completion:*' rehash true
 
 
 # Added by Antigravity CLI installer
 export PATH="/home/luk/.local/bin:$PATH"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
