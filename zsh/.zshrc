@@ -71,14 +71,11 @@ plugins=(git)
 # User configuration
 
 update_all() {
-	echo "-> 1. Updating DNF packages... <-"
-	sudo dnf update -y
+	echo "-> 1. Updating pacman packages... <-"
+	sudo pacman -Syu
 
 	echo -e "\n-> 2. Updating Flatpaks... <-"
 	flatpak update -y
-
-	echo -3 "\n-> 3. Updating Homebrew casks and formulae... <-"
-	brew update && brew upgrade
 
 	echo -e "\n -> Everything has been updated succesfully. <-"
 	}
@@ -96,23 +93,16 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="bira"
 source $ZSH/oh-my-zsh.sh
 
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls='eza --icons --group-directories-first'
 alias df='duf'
 alias cat='bat'
 alias grep='rg'
 alias ping='gping'
-alias spt='spotify_player'
 alias vencord='/home/luk/dotfiles/scripts/vencord.sh'
 alias maxwell='/home/luk/dotfiles/scripts/maxwell.py'
 alias update=update_all
 
 zstyle ':completion:*' rehash true
-
-
-# Added by Antigravity CLI installer
-export PATH="/home/luk/.local/bin:$PATH"
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
