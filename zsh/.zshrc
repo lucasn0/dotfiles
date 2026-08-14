@@ -71,7 +71,7 @@ plugins=(git)
 # User configuration
 
 update_all() {
-	echo "-> 1. Updating pacman packages... <-"
+	echo "-> 1. Updating dnf packages... <-"
 	sudo dnf update -y
 
 	echo -e "\n-> 2. Updating Flatpaks... <-"
