@@ -101,8 +101,11 @@ alias df='duf'
 alias cat='bat'
 alias grep='rg'
 alias ping='gping'
+alias fetch='fastfetch -c neofetch'
 alias vencord='/home/luk/dotfiles/scripts/vencord.sh'
 alias maxwell='/home/luk/dotfiles/scripts/maxwell.py'
 alias update=update_all
 
 zstyle ':completion:*' rehash true
+
+
