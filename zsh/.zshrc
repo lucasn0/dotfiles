@@ -106,6 +106,9 @@ alias vencord='/home/luk/dotfiles/scripts/vencord.sh'
 alias maxwell='/home/luk/dotfiles/scripts/maxwell.py'
 alias update=update_all
 
+alias dezbap='ssh ubuntu@18.188.178.230'
+alias dezbat='ssh ubuntu@3.136.2.65'
+
 zstyle ':completion:*' rehash true
 
 
